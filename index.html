@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css" >
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sample Interest Calculator</title>
 </head>
 <body>
-    
+    <div class="maindiv">
+     <h1>Sample Interest Calculator</h1>
+     Amount  <input type="number" id="amount"><br>
+     Rate    <input type="range" onchange="newrate()"  id="rate" max="20" min="1" value="10.25"><br>
+     <span  id="ratevalue">10.25%</span><br>
+     No. of years <select id="years">
+         <option >1</option>
+         <option>2</option>
+         <option>3</option>
+     </select><br>
+     <button onclick="compute()" id="compute">Compute Interest</button><br>
+     <span id="result"></span>
+
+     <footer>  &#169;This belongs to Taha</footer>
+
+    </div>
 </body>
 </html>
